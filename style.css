@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Monospace;
+}
+#tela {
+	width: 100vw; height: 100vh;
+	background-color: #0e1018;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+	box-shadow: 0 10px 35px 30px #0e1018;
+}
+
+/*pontuacao*/
+header#pontuacao {
+	height: 20vh;
+	font-style: italic;
+	position: absolute;
+	top: 0;
+	margin-top: 10px;
+	color: white;
+}
+header#pontuacao p {
+	font-size: 100px;
+	display: inline-block;
+}
+
+/*conteiner do card cor*/
+div#cardcor {
+	width: 30vh; height: 30vh;
+	margin: auto;
+	background-color: lightblue;
+	border-radius: 4vh;
+}
+/*cards*/
+div#cards {
+	color: #fff;
+	font: 14px monospace;
+	margin-top: 10px;
+	display: flex;
+}
+div#cards div {
+	width: 16vh; height: 16vh;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	margin: 2px;
+	z-index: 1;
+	background-color: #7777773d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	text-align: center;
+	user-select: none;
+	transition-duration: .7s;
+}
+
+/*Caracteristicas das cards*/
+.errado {
+  box-shadow:
+    inset 9px 9px 30px red,
+    inset -9px -9px 30px red,
+    5px 5px 30px red,
+    -5px -5px 30px red,
+    -5px 5px 30px red,
+    5px -5px 30px red;
+}
+.certo {
+  box-shadow:
+    inset 10.5px 10.5px 30px gold,
+    inset -10.5px -10.5px 30px gold,
+    5px 5px 30px gold,
+    -5px -5px 30px gold,
+    -5px 5px 30px gold,
+    5px -5px 30px gold;
+  z-index: 2;
+}
